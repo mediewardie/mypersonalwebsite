@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    nav a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      object-fit: cover;
+      object-position: center;
+      
+    }
+    .gallery img {
+      width: 400px;
+      height: 400px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      object-fit: cover;
+      object-position: center;
+    }
+    footer {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="insights.html">Insights</a>
+    </nav>
+  </header>
+  <main>
+    <h2>My Portfolio</h2>
+    <p style="font-size: 25px;">Here are some snapshots of my work, hobbies, and memories.</p>
+    <div class="gallery">
+      <img src="Pictures/gallery 1.jpg" alt="Wish Bus Performance!">
+      <img src="Pictures/gallery 2.jpg" alt="Wish Bus Band!">
+      <img src="Pictures/gallery 3.jpg" alt="Wish Bus with my Parents!">
+      <img src="Pictures/gallery 4.JPG" alt="Music Video Recording!">
+    </div>
+    <p style="font-size: 25px; 
+    text-align: center;
+    ">Who would've thought someone like me could play in a place like this. Truly nothing is impossible with our God!.</p>
+    <p style="font-size: 25px;">Ive been to coke studio concert as well hehe :></p>
+    <img src="Pictures/coke studio.jpg" alt="COKE STUDIO!">
+    <p style="font-size: 25px;"> I like taking pictures too, most of the time my girlfriend ^_^</p>
+    <img src="Pictures/RIe 1.jpg" height="900" width="500" alt="My Girl">
+    <div class="gallery">
+        <img src="Pictures/rie (1).jpg" alt="Wish Bus Performance!">
+        <img src="Pictures/rie (2).jpg" alt="Wish Bus Band!">
+        <img src="Pictures/rie (3).jpg" alt="Wish Bus with my Parents!">
+        <img src="Pictures/rie (4).jpg" alt="Music Video Recording!">
+      </div>
+    <p style="font-size: 25px;">I just live to fulfill a happy life, doing what I like, making the people around me as happy as they could be.</p>
+  </main>
+  <footer>
+    <p>© 2024 My Personal Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
